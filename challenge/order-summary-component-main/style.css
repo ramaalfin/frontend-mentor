@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url("./images/pattern-background-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: hsl(225, 100%, 94%);
+    font-family: "Red Hat Display", sans-serif;
+}
+
+@media screen and (max-width: 1440px) {
+    .container{
+        display: flex;
+        height: 100vh;
+        place-content: center;
+        padding: 40px;
+    }
+    .card-container{
+        
+        width: 34%;
+        height: 100%;
+        background-color: white;
+        border-radius: 20px;
+    }
+    .img-container img{
+        width: 100%;
+        border-radius: 20px 20px 0 0;
+    }
+    .text-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        max-width: 80%;
+        margin: 0 auto;
+    }
+    .text-container h1{
+        font-size: 2rem;
+        font-weight: 900;
+        color: #1F2E55;
+        margin-top: 1.3rem;
+    }
+    .text-container h2{
+        font-size: 1rem;
+        font-weight: 500;
+        margin: 1.3rem 0;
+        color: hsl(224, 23%, 55%);
+        opacity: .7;
+        width: 98%;
+    }
+
+    .plan{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: .1rem;
+        background-color: hsl(225, 100%, 98%);
+        border-radius: 10px;
+        width: 100%;
+        padding: 10px;
+    }
+    .plan-price{
+        margin-right: 20%;
+    }
+    .plan-price h3{
+        font-size: 1rem;
+    }
+    .plan-price p{
+        font-size: 1rem;
+        color: hsl(224, 23%, 55%);
+    }
+    .plan-change a{
+        cursor: pointer;
+    }
+    .plan-change a:hover{
+        text-decoration: none;
+    }
+    
+    .proceed{
+        border: none;
+        background-color: hsl(245, 75%, 52%);
+        border-radius: 10px;
+        box-shadow: 0 1rem 2rem hsla(245, 75%, 52%, 0.23);
+        cursor: pointer;
+        color: white;
+        font-size: .9rem;
+        font-weight: 900;
+        margin-top: 25px;
+        padding: 15px;
+        width: 100%;
+    }
+    .proceed:hover{
+        opacity: .7;
+        transition: .5s;
+    }
+    .cancel{
+        border: none;
+        background-color: transparent;
+        font-size: .9rem;
+        font-weight: 900;
+        cursor: pointer;
+        margin-top: 25px;
+        opacity: .5;
+    }
+    .cancel:hover{
+        opacity: 1;
+        transition: .5s;
+    }
+}
+@media screen and (max-width: 375px) {
+    .container {
+        padding: 40px 20px;
+    }
+    .card-container {
+        width: 100%;
+    }
+    .text-container {
+        max-width: 85%;
+    }
+    .text-container h1 {
+        font-size: 1.4rem;
+        margin-top: 1rem;
+    }
+    .text-container h2 {
+        font-size: .9rem;
+        margin: 1rem 0;
+        width: 87%;
+    }
+    .plan {
+        margin-top: 10px;
+    }
+    .plan-icon img{
+        width: 35px;
+        height: 35px;
+    }
+    .plan-price {
+        margin-right: 18%;
+    }
+    .plan-price h3{
+        font-size: .9rem;
+    }
+    .plan-price p{
+        font-size: .9rem;
+    }
+    .plan-change a {
+        font-size: .9rem;
+    }
+    .proceed {
+        font-size: .8rem;
+        margin-top: 20px;
+        padding: 13px;
+    }
+    .cancel{
+        font-size: .8rem;
+        margin-top: 20px;
+    }
+}

@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: hsl(233, 47%, 7%);
+    color: white;
+}
+@media screen and (max-width: 1440px) {
+    .container{
+        display: flex;
+        height: 100vh;
+        place-content: center;
+        margin: 13% auto;
+    }
+    .card-container {
+        border-radius: 10px;
+        display: flex;
+        width: 64%;
+        height: 47%;
+        background-color: hsl(244, 38%, 16%);
+    }
+    .row{
+        width: 100%;
+        display: flex;
+    }
+    .col-50{
+        width: 50%;
+    }
+    .text{
+        font-family: "Inter", sans-serif;
+        max-width: 80%;
+        margin: 40px 55px;
+    }
+    .text .title{
+        font-size: 1.7rem;
+        margin-bottom: 25px;
+    }
+    .text span{
+        color: hsl(277, 64%, 61%);
+    }
+    .text .desc{
+        color: hsla(0, 0%, 100%, 0.75);
+        font-size: .73rem;
+        max-width: 83.7%;
+        line-height: 20px;
+    }
+    .data{
+        display: flex;
+        font-weight: 400;
+        font-size: .9rem;
+        justify-content: space-between;
+        margin-top: 50px;
+        max-width: 78%;
+    }
+    .data span{
+        font-size: .6rem;
+        font-weight: lighter;
+        color: hsla(0, 0%, 100%, 0.6);
+        letter-spacing: 1px;
+        text-transform: uppercase;
+    }
+    .img {
+        background-image: url(./images/image-header-desktop.jpg);
+        background-color: hsl(277, 64%, 61%);
+        background-blend-mode: multiply;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 0px 10px 10px 0px;
+        width: 100%;
+        height: 100%;
+    }
+}
+@media screen and (max-width: 375px) {
+    .container {
+        height: 115vh;
+        margin: 10% auto;
+    }
+    .card-container {
+        width: 81%;
+        height: 100%;
+    }
+    .row {
+        flex-direction: column-reverse;
+    }
+    .col-50 {
+        width: 100%;
+        height: 100%;
+    }
+    .text {
+        max-width: 82%;
+        margin: 20px auto;
+        text-align: center;
+    }
+    .text .title {
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+    }
+    .text .desc {
+        max-width: 100%;
+        font-size: .9rem;
+    }
+    .data {
+        display: block;
+        margin-top: 40px;
+        max-width: 100%;
+    }
+    h3{
+        margin-bottom: 20px;
+    }
+    .img {
+        border-radius: 10px 10px 0px 0px;
+    }
+}
